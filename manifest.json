@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Medium For Vietnamese",
   "description": "Extension helps to fix fonts for some websites written in Vietnamese.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Được Nguyễn <nguyenvanduocit@gmail.com>",
   "icons": {
     "195": "assets/icons/195.png"

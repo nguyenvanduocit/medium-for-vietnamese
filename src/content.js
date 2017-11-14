@@ -1,14 +1,10 @@
-import css from './content.raw.css'
-/* global chrome */
-let assetPath = chrome.runtime.getURL('assets/fonts')
-let replacedCss = css.replace(/__EXTENSION_URL__/g, assetPath)
-console.log(replacedCss)
+import css from './fontface.raw.css'
 let style = document.createElement('style')
 style.type = 'text/css'
 if (style.styleSheet) {
-  style.styleSheet.cssText = replacedCss
+  style.styleSheet.cssText = css
 } else {
-  style.appendChild(document.createTextNode(replacedCss))
+  style.appendChild(document.createTextNode(css))
 }
 let head = document.getElementsByTagName('head')
 head[0].appendChild(style)

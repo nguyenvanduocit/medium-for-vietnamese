@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Medium For Vietnamese",
-  "description": "Extension helps to fix Medium.com's fonts for Vietnamese.",
-  "version": "0.1.3",
+  "name": "Vietnamese Fonts",
+  "description": "Extension helps to fix fonts for Vietnamese.",
+  "version": "0.1.4",
   "author": "Được Nguyễn <nguyenvanduocit@gmail.com>",
   "icons": {
     "195": "assets/icons/195.png"
@@ -15,9 +15,10 @@
     "activeTab",
     "webRequest",
     "webRequestBlocking",
-    "https://*.medium.com/*"
+    "http://*/",
+    "https://*/"
   ],
   "web_accessible_resources": [
-    "assets/*"
+    "assets/css/*"
   ]
 }

@@ -4,11 +4,9 @@ const fileMap = {
 }
 
 const handler = (info) => {
-  console.log(info)
   if (info.tabId === -1) {
     return {}
   }
-  console.log(fileMap[info.url])
   return {
     redirectUrl: chrome.extension.getURL(fileMap[info.url])
   }
@@ -17,5 +15,6 @@ const options = {
   urls: Object.keys(fileMap),
   types: ['stylesheet']
 }
-/* global chrome */
-chrome.webRequest.onBeforeRequest.addListener(handler, options, ['blocking'])
+
+const browser = browser || chrome
+browser.webRequest.onBeforeRequest.addListener(handler, options, ['blocking'])

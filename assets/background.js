@@ -1,4 +1,4 @@
-const browser = browser || chrome
+const browser = chrome
 
 const fileMap = {
   'https://glyph.medium.com/css/e/sr/latin/e/ssr/latin/e/ssb/latin/m2.css': 'assets/css/medium.css',
